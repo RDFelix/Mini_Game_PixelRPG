@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Regalitooooo</title>
+		<link rel="shortcut icon" href="page_icon.png" /> 
+		<link href="wordle.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap" rel="stylesheet">
+		<script src="wordle.js"></script>
+	</head>
+	<body>
+		<div id="div_menu">
+			<div id="cuadro_menu">
+				<p>¿Que deseas hacer?</p>
+				<a href="wordle.html" class="bt_menu">WORDLE</a>
+				<a href="index.html" class="bt_menu">DIALOGOS</a>
+			</div>
+			<img src="bola.gif" id="sprite" style="width: auto; height: 100px;" onclick="menu()">
+		</div>
+
+		<div id="contenido">
+			<p id="text1" class="text"></p>
+		</div>
+		<div id="div_teclado">
+			<div id="div_sub_teclado">
+			<div>
+				<a href="#" class="letra" id="q" onclick="escribir_q()">Q</a>
+				<a href="#" class="letra" id="w" onclick="escribir_w()">W</a>
+				<a href="#" class="letra" id="e" onclick="escribir_e()">E</a>
+				<a href="#" class="letra" id="r" onclick="escribir_r()">R</a>
+				<a href="#" class="letra" id="t" onclick="escribir_t()">T</a>
+				<a href="#" class="letra" id="y" onclick="escribir_y()">Y</a>
+				<a href="#" class="letra" id="u" onclick="escribir_u()">U</a>
+				<a href="#" class="letra" id="i" onclick="escribir_i()">I</a>
+				<a href="#" class="letra" id="o" onclick="escribir_o()">O</a>
+				<a href="#" class="letra" id="p" onclick="escribir_p()">P</a></div>
+			<div>
+				<a href="#" class="letra" id="a" onclick="escribir_a()">A</a>
+				<a href="#" class="letra" id="s" onclick="escribir_s()">S</a>
+				<a href="#" class="letra" id="d" onclick="escribir_d()">D</a>
+				<a href="#" class="letra" id="f" onclick="escribir_f()">F</a>
+				<a href="#" class="letra" id="g" onclick="escribir_g()">G</a>
+				<a href="#" class="letra" id="h" onclick="escribir_h()">H</a>
+				<a href="#" class="letra" id="j" onclick="escribir_j()">J</a>
+				<a href="#" class="letra" id="k" onclick="escribir_k()">K</a>
+				<a href="#" class="letra" id="l" onclick="escribir_l()">L</a>
+				<a href="#" class="letra" id="ñ" onclick="escribir_ñ()">Ñ</a></div>
+			<div>
+				<a href="#" class="letra" id="z" onclick="escribir_z()">Z</a>
+				<a href="#" class="letra" id="x" onclick="escribir_x()">X</a>
+				<a href="#" class="letra" id="c" onclick="escribir_c()">C</a>
+				<a href="#" class="letra" id="v" onclick="escribir_v()">V</a>
+				<a href="#" class="letra" id="b" onclick="escribir_b()">B</a>
+				<a href="#" class="letra" id="n" onclick="escribir_n()">N</a>
+				<a href="#" class="letra" id="m" onclick="escribir_m()">M</a></div>
+		</div>
+
+			
+
+			<div id="div_especiales">
+				<a href="#" class="letra" id="borrar" onclick="borrar()">Delete</a>
+				<a href="#" class="letra" onclick="aceptar()">Aceptar</a>
+			</div>
+		</div>
+	</body>
+</html>

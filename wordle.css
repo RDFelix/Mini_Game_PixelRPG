@@ -1,0 +1,86 @@
+body{
+     display: grid;
+	font-family: 'Gajraj One', cursive;
+	background-color: var(--background);
+    background-image: url('fondo1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+	margin:0;
+	padding: 5% 15%;
+}
+:root{
+	--menu:none;
+     --menu_top: 0;
+     --menu_left: 0;
+}
+.letra{
+	font-size: 50px;
+	color: #444;
+	text-decoration: none;
+}
+#contenido{
+	background: #f3f3f3;
+	display: flex;
+	justify-content: center;
+	border: double;
+}
+.text{
+	margin: 4px 0;
+	font-size: 50px;
+	letter-spacing: 5px
+}
+#div_teclado{
+	margin: 20px 0;
+	display:flex;
+	background:#C8C5C5 ;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	border: double;
+}
+#div_especiales{
+	display: grid;
+}
+#div_sub_teclado{
+	display: grid;
+}
+
+
+
+/**-------OPCIONES DE MENU-------**/
+#div_menu{
+      display: grid;
+      position:relative;
+}
+#cuadro_menu{
+      display: var(--menu);
+      width: 100px;
+      padding: 5px;
+      position:relative;
+      border: double;
+      background: #C8C5C5;
+      justify-content: center;
+      justify-items: center;
+      top: var(--menu_top);
+      left: var(--menu_left);
+}
+.bt_menu{
+      font-family: monospace;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      border:double;
+      cursor: pointer;
+      padding: 2px;
+      margin:3px 0;
+      background-color: #C8C5C5 ;
+      width: 70px;
+      height: auto;
+      font-size: 15px;
+}
+/**------------------------------**/

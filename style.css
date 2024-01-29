@@ -1,0 +1,184 @@
+body{
+      display: grid;
+	font-family: 'Gajraj One', cursive;
+      background-color: var(--bg_body);
+      background-image: var(--img);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      align-items: end;
+      justify-content: center;
+	margin:0;
+      animation: var(--luz);
+      color:var(--color_body);;
+}
+@keyframes luz{
+      0%{backdrop-filter: blur(3px) brightness(0);}
+      100%{backdrop-filter: blur(0) brightness(1);}
+}
+center{
+      margin: 0 0 200px 0;
+}
+footer{
+      background: #BDBDBD;
+      position: absolute;
+      width: 100em;
+      height: 200px;
+      display: none;
+}
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+      display: none;
+}
+/**-----------------------VARIABLES----------------------**/
+:root {
+      /**-------------------EPISODIO 1-------------------**/
+      --img:;                --bg_dig:black;      --boder_dig:none;
+      --press:none;          --sprite:none;       --luz:;
+      --img:;                --altY:;             --altX:;
+      --h_lamp:0;            --anim_fire:;        --display_lamp:flex;
+      --h_fire:100px;        --w_fire:100px;      --anim_sprite:;
+      --color_body:#F6F6F6;  --bg_body:black;     --op_dig:none;
+      /**------------------------------------------------**/
+      
+
+
+      --longitud:;
+      --hide:grid;
+      --background: #33B2FF;
+      --show:none;
+      --menu:none;
+      --menu_top: 0;
+      --menu_left: 0;
+}
+/**------------------------------------------------------**/
+
+
+
+
+/**-------EPISODIO 1 - CSS-------**/
+#press{
+      display: var(--press);
+      animation: press 2s infinite;
+}
+@keyframes press{
+      0%{opacity:1;}
+      50%{opacity:0;}
+      100%{opacity: 1;}
+
+}
+#sprite{
+      display: var(--sprite);
+      animation: var(--anim_sprite);
+}
+@keyframes anim_sprite{
+      0%{opacity: 0}
+}
+#luz_lamp{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background:black;
+      display: var(--display_lamp);
+      top:var(--altY);
+      left: var(--altX);
+      opacity: var(--h_lamp);
+      justify-content: center;
+      align-items: end;
+}
+#fire{
+      width: var(--w_fire);
+      height: var(--h_fire);     
+}
+/**------------------------------*
+
+
+
+
+/**------CUADRO DE DIALOGOS------**/
+#div_text{
+      display: grid;
+      padding: 20px 20px 0 20px;
+      margin: 10px;
+      border: var(--boder_dig);
+      background: var(--bg_dig);
+}
+#flecha_div{
+      display: flex;
+      justify-content: flex-end;
+}
+#flecha{
+      margin:0;
+      display: var(--show);
+}
+
+/**------------------------------**/
+
+
+
+/**-----OPCIONES DE DIALOGO------**/
+.bt_option {
+      font-family: monospace;
+      text-align: center;
+      text-decoration: none;
+      display: var(--op_dig);
+      border-radius: 5px;
+      border:double;
+      cursor: pointer;
+      padding: 10px 20px;
+      margin:5px 0;
+      background-color: #C8C5C5 ;
+      width: 100px;
+}
+#div_option{
+      display: grid;
+      position: relative;
+      top:-130px;
+      height: 0;
+      justify-content: end;
+}
+#cuadro_option{
+      display: var(--op_dig);
+      width: 150px;
+      justify-content: center;
+      padding: 5px;
+      position:relative;
+      border: double;
+      background: #C8C5C5 ;
+}
+/**------------------------------**/
+
+
+
+/**-------OPCIONES DE MENU-------**/
+#div_menu{
+      display: grid;
+      position:relative;
+}
+#cuadro_menu{
+      display: var(--menu);
+      width: 200px;
+      padding: 5px;
+      position:relative;
+      border: double;
+      background: #C8C5C5;
+      justify-content: center;
+      justify-items: center;
+      top: var(--menu_top);
+      left: var(--menu_left);
+}
+.bt_menu{
+      font-family: monospace;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      border:double;
+      cursor: pointer;
+      padding: 2px;
+      margin:3px 0;
+      background-color: #C8C5C5 ;
+      width: 70px;
+      height: auto;
+      font-size: 15px;
+}
+/**------------------------------**/
